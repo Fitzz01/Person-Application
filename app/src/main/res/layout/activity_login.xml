@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/backgroundsign1"
+    android:padding="60dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/UserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="-Your UserName-"
+            android:textColor="@color/black"
+            android:textColorHint="#59000000"
+            app:backgroundTint="#59000000"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="-Your Phone Number-"
+            android:layout_below="@id/UserName"
+            android:layout_marginTop="30dp"
+            android:textColorHint="#59000000"
+            app:backgroundTint="#59000000"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="-Your Password-"
+            android:inputType="textPassword"
+            android:layout_below="@id/phone"
+            android:layout_marginTop="30dp"
+            android:textColorHint="#59000000"
+            app:backgroundTint="#59000000"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/repassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="-Confirm Your Password-"
+            android:inputType="textPassword"
+            android:layout_below="@id/password"
+            android:layout_marginTop="30dp"
+            android:textColorHint="#59000000"
+            app:backgroundTint="#59000000"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/SignUpBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:layout_below="@id/repassword"
+            android:background="@drawable/button_style"
+            app:backgroundTint="@null"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/architects_daughter"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/alreadyAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already Have An Account?"
+            android:layout_below="@id/SignUpBtn"
+            android:layout_alignStart="@id/SignUpBtn"
+            android:layout_alignEnd="@id/SignUpBtn"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/architects_daughter"
+            android:textColor="#59000000"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

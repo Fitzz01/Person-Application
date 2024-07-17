@@ -1,0 +1,90 @@
+*{
+    font-family: 'Amatic SC';
+    font-weight: 700;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+table {
+    border-collapse: collapse;
+  }
+  th{
+    background-color: #5889F3;
+  }
+
+  td, th {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+  }
+
+  tr:nth-child(even) {
+    background-color: #e2e2e2;
+  }
+
+  a{
+    color: #000000;
+    text-decoration: none;
+  }
+
+  a:hover{
+    color: #A770EF;
+  }
+
+  h2{
+    color: #000000;
+  }
+
+  .lecture{
+    font-size: 10px;
+  }
+
+  .container-box{
+	  padding: 10px;
+    }
+
+  .container-text{
+    /* border-left: 5px solid #ffbb00; */
+    border-right: 5px solid #ffbb00;
+    color: #797979;
+    font-size: 15px;
+	width: 92.5%;
+	background: #F8FAFF;
+	box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+	display:block;
+	border-radius: 20px;
+	transition: 700ms;
+	transition-timing-function:ease-in-out;
+	padding: 10px 10px 30px;
+	will-change: transform;
+    text-align: justify;
+}
+
+.container-box, .container-text, p{
+    font-family: 'Roboto';
+    color: #717171;
+    font-weight: 300;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}

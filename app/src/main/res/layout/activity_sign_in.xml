@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundsign3"
+    android:padding="60dp"
+    tools:context=".SignInActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="-Phone-"
+            android:layout_marginTop="30dp"
+            android:textColorHint="#59000000"
+            app:backgroundTint="#59000000"
+            android:textColor="@color/black"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:id="@+id/signIn_phone"/>
+
+        <EditText
+            android:id="@+id/signIn_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="-Password-"
+            android:inputType="textPassword"
+            android:layout_below="@id/signIn_phone"
+            android:layout_marginTop="30dp"
+            android:textColorHint="#59000000"
+            app:backgroundTint="#59000000"
+            android:textColor="@color/black"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/SignIn_Btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            app:backgroundTint="@null"
+            android:layout_below="@id/signIn_password"
+            android:background="@drawable/button_style"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/architects_daughter"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/yetAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:layout_below="@id/SignIn_Btn"
+            android:layout_alignStart="@id/SignIn_Btn"
+            android:layout_alignEnd="@id/SignIn_Btn"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#59000000"
+            android:fontFamily="@font/architects_daughter"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
